@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700&display=swap');
+
 
 :root {
     --roxoforte: #8844ee;
@@ -76,10 +77,11 @@ header ul a:hover {
 
 .sidenav a {
     display: block;
-    width: 140px;
+    min-width: 100px;
+    max-width: 140px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
     padding: 20px;
     margin: 0 auto 30px;
 }
@@ -94,15 +96,151 @@ header ul a:hover {
     width: 100%;
 }
 
-main {
-    grid-area: main;
-}
-
 .ads {
     grid-area: ads;
     background-color: var(--brancoforte);
+    padding: 30px;
+}
+
+.ads img {
+    display: block;
+    width: 100%;
+    min-width: 140px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+main {
+    grid-area: main;
+    padding: 30px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+article p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.titulo h1 {
+    font-size: 3.75em;
+    font-weight: 700;
+    line-height: 1em;
+    color: var(--roxofraco);
+}
+
+.titulo span {
+    font-size: 0.875em;
+    font-style: italic;
+    color: var(--roxofraco);
+}
+
+.peso-idade {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+    justify-content: start;
+    align-content: start;
+    text-align: center;
+}
+
+.peso-idade div {
+    width: 80px;
+    background-image: linear-gradient(to right bottom, var(--roxoforte), var(--roxofraco));
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.numero {
+    font-size: 3em;
+    line-height: 1em;
+    color: var(--roxofraco);
+    margin: 10px 10px 12px 10px;
+}
+
+.rotulo {
+    font-size: 1em;
+    line-height: 1em;
+    color: var(--roxofraco);
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    padding: 8.2px;
+}
+
+.grid-column-span2 {
+    grid-column: span 2;
+}
+
+article img {
+    display: block;
+    width: 100%;
+    align-self: stretch;
+    border-radius: 5px;
+}
+
+.lobo1 {
+    grid-row: span 2;
+}
+
+.lobo3 {
+    grid-column: span 2;
+}
+
+.destaque {
+    font-size: 0.875em;
+    color: var(--roxofraco);
+    max-width: 16em;
+}
+
+blockquote {
+    grid-column: span 2;
+    background-image: linear-gradient(to right, var(--roxoforte), var(--roxofraco));
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.15);
+    padding: 30px;
+}
+
+blockquote p {
+    max-width: 500px;
+    margin: auto;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+section {
+    grid-row: span 2;
+    background-image: linear-gradient(to right bottom, var(--roxoforte), var(--roxofraco));
+    border-radius: 5px;
+    padding: 30px;
+}
+
+section p {
+    font-family: Courier, monospace;
+    font-size: 1.125em;
+    line-height: 1em;
+    color: white;
+    padding: 15px;
+}
+
+section hr {
+    border: 1px solid var(--roxofraco);
 }
 
 footer {
     grid-area: footer;
+    background-image: linear-gradient(to right, var(--roxoforte), var(--roxofraco));
+    padding: 30px;
+}
+
+footer p {
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
 }
