@@ -1,6 +1,6 @@
 # Projeto WildBeast🐺
 
-![GIF Demonstração](https://github.com/ramonfarias1/projeto-wildbeast/blob/main/images/demo.gif)
+![GIF Demonstrativo](https://github.com/ramonfarias1/projeto-wildbeast/blob/main/images/demo.gif)
 
 ## Sobre📄
 
